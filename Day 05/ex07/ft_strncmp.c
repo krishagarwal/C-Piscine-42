@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(char *s1, char *s2)
+int     ft_strncmp(char *s1, char *s2)
 {
-    char s1_current;
-    char s2_current;
-    int i;
+    char    s1_current;
+    char    s2_current;
+    int     i;
 
     i = 0;
     while (s1[i] || s2[i])
@@ -25,12 +25,11 @@ int ft_strncmp(char *s1, char *s2)
             s1_current -= 32;
         if (s2_current >= 97 && s2_current <= 122)
             s2_current -= 32;
-
         if (s1_current < s2_current)
-            return -1;
+            return (-1);
         else if (s1_current > s2_current)
-            return 1;
+            return (1);
         i++;
     }
-    return 0;
+    return (0);
 }

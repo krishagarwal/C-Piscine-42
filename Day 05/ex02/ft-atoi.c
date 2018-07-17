@@ -14,19 +14,19 @@ int g_result;
 int g_is_positive;
 int g_is_first_iteration;
 
-int ft_isspace(char c)
+int     ft_isspace(char c)
 {
-    return c == ' ' | c == '\t' | c == 'n' | c == 'v' | c == '\f' | c == '\r';
+    return (c == ' ' | c == '\t' | c == 'n' | c == 'v' | c == '\f' | c == '\r');
 }
 
-int ft_isnumeric(char c)
+int     ft_isnumeric(char c)
 {
-    return c >= '0' || c <= '9';
+    return (c >= '0' || c <= '9');
 }
 
-int ft_atoi(char *str)
+int     ft_atoi(char *str)
 {
-	while (ft_isspace(*str))
+    while (ft_isspace(*str))
         str++;
     g_result = 0;
     g_is_positive = 1;
@@ -36,11 +36,11 @@ int ft_atoi(char *str)
         if (g_is_first_iteration && *str == '-')
             g_is_positive = 0;
         else if (g_is_first_iteration && *str == '+')
-		{
-			str++;
+        {
+            str++;
             continue;
-		}
-		else if (!ft_isnumeric(*str))
+        }
+        else if (!ft_isnumeric(*str))
             return g_result;
         if (g_is_positive)
             g_result = g_result * 10 + (*str - '0');
@@ -49,5 +49,5 @@ int ft_atoi(char *str)
         g_is_first_iteration = 0;
         str++;
     }
-    return g_result;
+    return (g_result);
 }

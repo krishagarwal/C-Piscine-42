@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putchar(char c);
-
-int get_nth_digit(int n, int number)
+int     get_nth_digit(int n, int number)
 {
     int i;
 
@@ -22,10 +20,10 @@ int get_nth_digit(int n, int number)
         number /= 10;
         i++;
     }
-    return number % 10;
+    return (number % 10);
 }
 
-int get_num_length(int number)
+int     get_num_length(int number)
 {
     int i;
 
@@ -35,26 +33,28 @@ int get_num_length(int number)
         number /= 10;
         i++;
     }
-    return i;
+    return (i);
 }
 
-void ft_putnbr(int n)
+void    ft_putnbr(int n)
 {
+    int i;
+
     if (n == 0)
     {
         ft_putchar('0');
         ft_putchar('\n');
-        return;
+        return ;
     }
     else if (n < 0)
     {
         ft_putchar('-');
         n *= -1;
     }
-    int i = get_num_length(n);
+    i = get_num_length(n);
     while (i > 0)
     {
         ft_putchar(get_nth_digit(i, n) + '0');
         i--;
     }
-}
+}:

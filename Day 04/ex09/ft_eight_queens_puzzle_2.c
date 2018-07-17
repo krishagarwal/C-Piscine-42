@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putchar(char c);
-
-int ft_strlen(char *str)
+int     ft_strlen(char *str)
 {
     int count;
 
@@ -22,15 +20,15 @@ int ft_strlen(char *str)
         count++;
         str++;
     }
-    return count;
+    return (count);
 }
 
-int ft_check_pos(char *pos)
+int     ft_check_pos(char *pos)
 {
-    int length;
-    int distance;
-    int i;
-    char *end;
+    int		length;
+    int		distance;
+    int		i;
+    char	*end;
 
     length = ft_strlen(pos);
     i = 0;
@@ -39,21 +37,21 @@ int ft_check_pos(char *pos)
     {
         distance = ((int)end - (int)pos) / sizeof(char);
         if (*pos == *end)
-            return 0;
+            return (0);
         else if ((*pos - '0') + distance == (*end - '0'))
-            return 0;
+            return (0);
         else if ((*pos - '0') - distance == (*end - '0'))
-            return 0;
+            return (0);
         pos++;
     }
-    return 1;
+    return (1);
 }
 
-void ft_make_string(char *previous_pos)
+void	ft_make_string(char *previous_pos)
 {
-    int i;
-    int length;
-    char *temp;
+    int		i;
+    int		length;
+    char	*temp;
 
     length = ft_strlen(previous_pos);
     if (length == 8)
@@ -64,7 +62,7 @@ void ft_make_string(char *previous_pos)
             previous_pos++;
         }
         ft_putchar('\n');
-        return;
+        return ;
     }
     i = 1;
     while (i <= 8)
@@ -77,9 +75,8 @@ void ft_make_string(char *previous_pos)
     }
 }
 
-void ft_eight_queens_puzzle_2(void)
+void	ft_eight_queens_puzzle_2(void)
 {
     char pos[9];
-
     ft_make_string(pos);
 }

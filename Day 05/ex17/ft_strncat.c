@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int     ft_strlen(char *str)
 {
     int count;
 
@@ -20,17 +20,17 @@ int ft_strlen(char *str)
         count++;
         str++;
     }
-    return count;
+    return (count);
 }
 
-char *ft_strncat(char *dest, char *src, int nb)
+char    *ft_strncat(char *dest, char *src, int nb)
 {
-    int i;
-    char *iterate_dest;
+    int     i;
+    char    *iterate_dest;
 
     iterate_dest = dest + ft_strlen(dest);
     while (*src && i++ < nb)
         *(iterate_dest++) = *(src++);
     *iterate_dest = '\0';
-    return dest;
+    return (dest);
 }

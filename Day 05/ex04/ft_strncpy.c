@@ -10,7 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncpy(char *dest, char *src, unsigned int n)
+int     ft_strlen(char *str)
+{
+    int i;
+
+    i = 0;
+    while (*str != '\0')
+    {
+        i++;
+        str++;
+    }
+    return (i);
+}
+
+char    *ft_strncpy(char *dest, char *src, unsigned int n)
 {
     int i;
 
@@ -20,6 +33,7 @@ char *ft_strncpy(char *dest, char *src, unsigned int n)
         dest[i] = src[i];
         i++;
     }
-    dest[i] = '\0';
-    return dest;
+    if (strlen(src) == n)
+        dest[i] = '\0';
+    return (dest);
 }

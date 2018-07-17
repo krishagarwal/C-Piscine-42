@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int     ft_strlen(char *str)
 {
     int count;
 
@@ -20,10 +20,10 @@ int ft_strlen(char *str)
         count++;
         str++;
     }
-    return count;
+    return (count);
 }
 
-char *ft_strstr(char *str, char *to_find)
+char    *ft_strstr(char *str, char *to_find)
 {
     int i;
     int a;
@@ -38,10 +38,10 @@ char *ft_strstr(char *str, char *to_find)
         while (to_find[a] == str[i + a])
         {
             if (a == to_find_length - 1)
-                return str + i;
+                return (str + i);
             a++;
         }
         i++;
     }
-    return 0;
+    return (0);
 }

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int     ft_strlen(char *str)
 {
     int count;
 
@@ -20,10 +20,10 @@ int ft_strlen(char *str)
         count++;
         str++;
     }
-    return count;
+    return (count);
 }
 
-char *ft_strcat(char *dest, char *src)
+char    *ft_strcat(char *dest, char *src)
 {
     char *iterate_dest;
 
@@ -35,5 +35,5 @@ char *ft_strcat(char *dest, char *src)
         iterate_dest++;
     }
     *iterate_dest = '\0';
-    return dest;
+    return (dest);
 }
