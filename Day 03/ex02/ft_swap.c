@@ -6,15 +6,15 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/12 10:23:11 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/13 10:34:53 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/16 14:49:29 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-    int temp;
+	int temp;
 
-    temp = *a;
-    *a = *b;
-    *b = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

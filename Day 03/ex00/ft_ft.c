@@ -6,11 +6,11 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/12 10:12:32 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/13 10:33:43 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/16 14:47:40 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 {
-    *nbr = 42;
+	*nbr = 42;
 }

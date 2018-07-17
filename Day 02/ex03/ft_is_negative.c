@@ -3,19 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: kagarwal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/11 10:30:18 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/13 10:29:54 by kagarwal         ###   ########.fr       */
+/*   Created: 2018/07/16 13:40:57 by kagarwal          #+#    #+#             */
+/*   Updated: 2018/07/16 13:42:35 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putchar(char c);
-
-void ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
-    if (n >= 0)
-        ft_putchar('P');
-    else
-        ft_putchar('N');
+	if (n >= 0)
+		ft_putchar('P');
+	else
+		ft_putchar('N');
 }

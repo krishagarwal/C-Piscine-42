@@ -6,34 +6,34 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/13 14:58:19 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/13 15:56:07 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/17 10:05:55 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (*str != '\0')
-    {
-        i++;
-        str++;
-    }
-    return (i);
+	i = 0;
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
 }
 
-char    *ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (i < n)
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    if (strlen(src) == n)
-        dest[i] = '\0';
-    return (dest);
+	i = 0;
+	while (i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	if (strlen(src) == n)
+		dest[i] = '\0';
+	return (dest);
 }

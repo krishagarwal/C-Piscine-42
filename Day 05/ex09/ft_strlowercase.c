@@ -6,20 +6,20 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/13 14:58:19 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/13 15:56:07 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/17 10:11:53 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strlowercase(char *str)
+char	*ft_strlowercase(char *str)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (str[i])
-    {
-        if (str[i] >= 'A' && str[i] <= 'Z')
-            str[i] += 32;
-        i++;
-    }
-    return (str);
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
+	}
+	return (str);
 }

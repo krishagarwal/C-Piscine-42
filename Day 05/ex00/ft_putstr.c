@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.us.org       +#+  +:+       +#+        */
+/*   By: kagarwal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/16 10:10:58 by rpenmatc          #+#    #+#             */
-/*   Updated: 2018/07/16 10:11:02 by rpenmatc         ###   ########.fr       */
+/*   Created: 2018/07/17 09:57:24 by kagarwal          #+#    #+#             */
+/*   Updated: 2018/07/17 09:57:34 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-    while (*str)
-    {
-        ft_putchar(*str);
-        str++;
-    }
+	while (*str)
+	{
+		ft_putchar(*str);
+		str++;
+	}
 }

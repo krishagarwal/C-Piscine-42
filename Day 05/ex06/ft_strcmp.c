@@ -6,22 +6,22 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/13 14:58:19 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/13 15:56:07 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/17 10:08:55 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(char *s1, char *s2)
 {
-    int i;
+	int i;
 
-    i = 0;
-    while (s1[i] || s2[i])
-    {
-        if (s1[i] < s2[i])
-            return -1;
-        if (s1[i] > s2[i])
-            return 1;
-        i++;
-    }
-    return (0);
+	i = 0;
+	while (s1[i] || s2[i])
+	{
+		if (s1[i] < s2[i])
+			return (-1);
+		if (s1[i] > s2[i])
+			return (1);
+		i++;
+	}
+	return (0);
 }
