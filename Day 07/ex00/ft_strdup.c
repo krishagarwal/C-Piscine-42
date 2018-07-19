@@ -1,3 +1,5 @@
+void    *malloc(int size);
+
 int		ft_strlen(char *str)
 {
 	int i;
