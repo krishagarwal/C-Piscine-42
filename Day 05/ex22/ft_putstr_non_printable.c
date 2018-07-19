@@ -1,37 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kagarwal <kagarwal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/13 14:58:19 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/18 15:13:29 by kagarwal         ###   ########.fr       */
+/*   Created: 2018/07/18 10:49:26 by kagarwal          #+#    #+#             */
+/*   Updated: 2018/07/18 14:38:50 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
-{
-	int count;
+void	ft_putchar(char c);
 
-	count = 0;
-	while (*str != '\0')
+void	ft_print_hexa(char nb)
+{
+	char	*hex;
+
+	hex = "0123456789abcdef";
+	if (nb > 16)
 	{
-		count++;
-		str++;
+		ft_putchar(nb / 16);
+		ft_putchar(nb % 16);
 	}
-	return (count);
+	else
+		ft_putchar(hex[nb]);
 }
 
-char	*ft_strncat(char *dest, char *src, int nb)
+void	ft_putstr_non_printable(char *str)
 {
 	int		i;
-	char	*iterate_dest;
 
 	i = 0;
-	iterate_dest = dest + ft_strlen(dest);
-	while (*src && i++ < nb)
-		*(iterate_dest++) = *(src++);
-	*iterate_dest = '\0';
-	return (dest);
+	while (str[i])
+	{
+		if ((str[i] < 32 && str[i] >= 0) || str[i] >= 127)
+		{
+			ft_putchar('\\');
+			if (str[i] < 16)
+				ft_putchar('0');
+			ft_print_hexa(str[i]);
+		}
+		else
+			ft_putchar(str[i]);
+		i++;
+	}
 }

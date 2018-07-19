@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kagarwal <kagarwal@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/18 10:43:33 by kagarwal          #+#    #+#             */
+/*   Updated: 2018/07/18 10:43:36 by kagarwal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 int		ft_strlen(char *str)
 {
 	int count;
@@ -17,16 +29,16 @@ int		check(char *base)
 	int	z;
 
 	i = 0;
-	if (ft_strlen(base) < 2)	
+	if (ft_strlen(base) < 2)
 		return (0);
-	while(base[i])
+	while (base[i])
 	{
 		z = i + 1;
 		if (base[i] == '-' || base[i] == '+')
 			return (0);
 		if (base[i] < 32 || base[i] > 126)
 			return (0);
-		while(base[z])
+		while (base[z])
 		{
 			if (base[i] == base[z])
 				return (0);

@@ -3,12 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: kagarwal <kagarwal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 01:05:24 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/17 09:58:40 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/18 15:24:16 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
+{
+	while (*str)
+	{
+		ft_putchar(*str);
+		str++;
+	}
+}
 
 int		get_nth_digit(int n, int number)
 {
@@ -40,6 +51,11 @@ void	ft_putnbr(int n)
 {
 	int i;
 
+	if (n == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return ;
+	}
 	if (n == 0)
 	{
 		ft_putchar('0');
