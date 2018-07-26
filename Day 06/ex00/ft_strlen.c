@@ -3,22 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: rpenmatc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/13 14:58:19 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/17 12:00:58 by kagarwal         ###   ########.fr       */
+/*   Created: 2018/07/18 11:10:30 by rpenmatc          #+#    #+#             */
+/*   Updated: 2018/07/18 11:10:44 by rpenmatc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strlen(char *str)
 {
-	int count;
+	int i;
 
-	count = 0;
-	while (*str != '\0')
-	{
-		count++;
-		str++;
-	}
-	return (count);
+	i = 0;
+	while (str[i])
+		i += 1;
+	return (i);
 }

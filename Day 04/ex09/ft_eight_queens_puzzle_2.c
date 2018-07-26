@@ -6,9 +6,11 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/13 15:59:03 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/17 09:53:01 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/19 09:42:46 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putchar(char c);
 
 int		ft_strlen(char *str)
 {
@@ -51,7 +53,6 @@ void	ft_make_string(char *previous_pos)
 {
 	int		i;
 	int		length;
-	char	*temp;
 
 	length = ft_strlen(previous_pos);
 	if (length == 8)

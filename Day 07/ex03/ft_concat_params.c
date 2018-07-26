@@ -1,4 +1,16 @@
-void    *malloc(int size);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_concat_params.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kagarwal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/07/24 11:18:52 by kagarwal          #+#    #+#             */
+/*   Updated: 2018/07/24 11:22:29 by kagarwal         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdlib.h>
 
 int		ft_strlen(char *str)
 {
@@ -28,36 +40,36 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 
-int get_length(int argc, char **argv)
+int		get_length(int argc, char **argv)
 {
-    int i;
-    int length;
+	int i;
+	int length;
 
-    length = 0;
-    i = 0;
-    while (i < argc)
-    {
-        length += ft_strlen(argv[i]);
-        i++;
-    }
-    return (length + argc);
+	length = 0;
+	i = 0;
+	while (i < argc)
+	{
+		length += ft_strlen(argv[i]);
+		i++;
+	}
+	return (length + argc);
 }
 
-char    *ft_concat_params(int argc, char **argv)
+char	*ft_concat_params(int argc, char **argv)
 {
-    char *result;
-    int i;
-    int length;
+	char	*result;
+	int		i;
+	int		length;
 
-    length = get_length(argc, argv);
-    result = malloc(length * sizeof(char));
-    i = 0;
-    while (i < argc)
-    {
-        ft_strcat(result, argv[i]);
-        ft_strcat(result, "\n");
-        i++;
-    }
-    result[length - 1] = '\0';
-    return result;
+	length = get_length(argc, argv);
+	result = malloc(length * sizeof(char));
+	i = 0;
+	while (i < argc)
+	{
+		ft_strcat(result, argv[i]);
+		ft_strcat(result, "\n");
+		i++;
+	}
+	result[length - 1] = '\0';
+	return (result);
 }

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
+/*   By: kagarwal <kagarwal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/11 02:10:37 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/17 11:01:05 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/19 12:28:36 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+void	ft_putchar(char c);
 
 void	ft_putstr(char *c)
 {

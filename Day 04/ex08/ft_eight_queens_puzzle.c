@@ -6,7 +6,7 @@
 /*   By: kagarwal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/16 15:20:50 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/16 15:26:42 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/19 09:41:16 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ void	ft_make_string(char *previous_pos, int *count)
 {
 	int		i;
 	int		length;
-	char	*temp;
 
 	length = ft_strlen(previous_pos);
 	if (length == 8)

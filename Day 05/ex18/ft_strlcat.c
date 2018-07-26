@@ -6,11 +6,10 @@
 /*   By: kagarwal <kagarwal@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/17 12:23:05 by kagarwal          #+#    #+#             */
-/*   Updated: 2018/07/18 18:26:20 by kagarwal         ###   ########.fr       */
+/*   Updated: 2018/07/19 10:11:18 by kagarwal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 int				ft_strlen(char *str)
 {
 	int count;
